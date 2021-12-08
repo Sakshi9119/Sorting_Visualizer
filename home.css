@@ -1,0 +1,76 @@
+/* body{
+  background-color: black;
+} */
+
+body{
+  background-color: hsl(173deg 2% 51%);
+}
+
+body{
+  background-color: hsl(180deg 15% 51%);
+}
+body > div > div > div.row1 > div:nth-child(1),body > div > div > div.row1 > div:nth-child(2),body > div > div > div.row1 > div:nth-child(3),body > div > div > div.row1 > div:nth-child(4), body > div > div > div.row1 > div:nth-child(5){
+  background-color: hsl(0deg 0% 0%);
+    color: hsl(0deg 3% 64%);
+}
+body > div > div > div.row2 > div:nth-child(1){
+  background-color: hsl(0deg 0% 0%);
+    color: hsl(0deg 3% 64%);
+}
+body > div > div > div.row2 > div:nth-child(2){
+  background-color: hsl(0deg 0% 0%);
+    color: hsl(0deg 3% 64%);
+}
+body > nav > div > form > button:hover{
+  color: black;
+  background-color: bisque;
+}
+body > nav > div > form > button > a{
+  text-decoration: none;
+    color: hsl(0deg 0% 100%);
+}
+
+
+.algos{
+  display: flex;
+  flex-direction: column;
+}
+.algos h3{
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.line1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 0px;
+}
+
+.line2{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 26px 209px;
+    
+}
+
+/* body > div > div.line1 > div:nth-child(1) > div{
+  background-color: hsl(210deg 5% 24%);
+    color: hsl(177deg 21% 67%);
+} */
+
+.card-body{
+  background-color: hsl(210deg 5% 24%);
+    color: hsl(177deg 21% 67%);
+}
+
+.card img{
+  height: 200px;
+}
+
+h1{
+  text-align: center;
+}

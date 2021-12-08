@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/home.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+  <title>Sorts</title>
+</head>
+  <body style="background-color: hsl(173deg 2% 51%);">
+    
+
+    <nav class="navbar navbar-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-warning "><b>Get-Sorted</b></a>
+        <form class="d-flex">
+          
+          <button class="btn btn-outline-warning" type="submit"><a href="/bubble.html">Visualization</button></a> 
+        </form>
+      </div>
+    </nav>
+
+  
+    <div class="algos text-white">
+
+      <h1 class="text-sucess align-content-center">Sorting Algorithms</h1>
+
+
+      <div class="line1">
+
+        <div class="card" style="width: 27rem;">
+          <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title text-warning">Bubble Sort</h4>
+            <p class="card-text">Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems</p>
+            <h5 class="card-title text-warning">Performance</h5>
+            <p class="card-text">
+              Worst-case time complexity => 	O(n2)<br>
+              Average time complexity => O(n2)<br>
+              Best-case time complexity =>	O(n)<br>
+              Worst-case space complexity	=> O(1)<br>
+              </p>
+            <a href="/bubble.html" class="btn btn-info">View Visualization</a>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 27rem;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv-3QjRG66O3p_ZGBAZC2I_uH2LxwvCYU5aElMZZxyJ4rNFoTcVSiqWpbVm09QW1OioZk&usqp=CAUZ" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title text-warning">Selection Sort</h4>
+            <p class="card-text">Selection Sort is an in-place comparison sorting algorithm that divides the input list into two parts: the sublist of items already sorted, which is built up from left to right at the front (left) of the list, and the sublist of items remaining to be sorted that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest element. </p>
+
+            <h5 class="card-title text-warning">Performance</h5>
+            <p class="card-text">Worst-case time complexity	=> O(n2)<br>
+              Average time complexity	=> O(n2<br>
+              Best-case time complexity	=> O(n2)<br>
+              Worst-case space complexity	=> O(1)
+              </p>
+            <a href="/selection.html" class="btn btn-info">View Visualization</a>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 27rem;">
+          <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title text-warning">Insertion Sort</h4>
+            <p class="card-text">Insertion Sort is a simple sorting algorithm that iterates through an array and at each iteration it removes one element from the array, finds the location it belongs to in the sorted list and inserts it there, repeating until no elements remain in the unsorted list. It is an in-place, stable sorting algorithm that is inefficient on large input arrays but works well for data sets that are almost sorted. 
+               </p>
+
+            <h5 class="card-title text-warning">Performance</h5>
+            <p class="card-text">Worst-case time complexity	=> O(n2)<br>
+              Average time complexity	=> O(n2)<br>
+              Best-case time complexity	=> O(n)<br>
+              Worst-case space complexity	=> O(1)
+              </p>
+            <a href="/insertion.html" class="btn btn-info">View Visualization</a>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="line2">
+
+        <div class="card" style="width: 27rem;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyotNiX3AA8-XVLi3C0DXFoOa0eNCNM0oXQ&usqp=CAUs" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title text-warning">Quick Sort</h4>
+            <p class="card-text">Quick Sort is an efficient, in-place sorting algorith that in practice is faster than MergeSort and HeapSort. However, it is not a stable sorting algorithm, meaning that the relative positioning of equal sort items is not preserved.Quicksort is a divide and conquer algorithm. Quicksort first divides a large array into two smaller sub-arrays: the low elements and the high elements. Quicksort can then recursively sort the sub-arrays.</p>
+
+            <h5 class="card-title text-warning">Performance</h5>
+            <p class="card-text">Worst-case time complexity	=> O(n2)<br>
+              Average time complexity	=> O(nlogn)<br>
+              Best-case time complexity	=> O(nlogn)<br>
+              Worst-case space complexity	=> O(logn)</p>
+            <a href="/quick.html" class="btn btn-info">View Visualization</a>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 27rem;">
+          <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title text-warning">Merge Sort</h4>
+            <p class="card-text">Merge Sort is an efficient, stable sorting algorith that makes use of the divide and conquer strategy. Conceptually the algorithm works as follows:
+
+              Divide the unsorted list into n sublists, each containing one element(a list of one element is considered sorted)
+              Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list.</p>
+
+            <h5 class="card-title text-warning">Performance</h5>
+            <p class="card-text">
+              Worst-case time complexity	=> O(n log n)<br>
+              Average time complexity	=> O(n log n)<br>
+              Best-case time complexity	=> O(n log n)<br>
+              Worst-case space complexity	=> O(n)</p>
+            <a href="/merge.html" class="btn btn-info">View Visualization</a>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+    
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+  

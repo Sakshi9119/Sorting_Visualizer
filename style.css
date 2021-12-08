@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 0 20px 30px 0;
+  line-height: 1.4;
+}
+body > header > nav {
+  margin-top: 35rem;
+}
+.flex-container {
+  /* margin-top: 20px; */
+  margin-top: -39rem;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  transition: 2s all ease;
+}
+
+.flex-item {
+  /* background: cyan; */
+  background: hsl(190deg 57% 52%);
+  border: 1pt solid black;
+  /* width: 10px; */
+  width: 75px;
+  transition: 0.1s all ease;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+#input {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.btn-outline-primary {
+  background-color: hsl(335deg 34% 48%);
+  color: hsl(0deg 0% 99%);
+  border-color: hsl(330deg 45% 28%);
+}
+
+.btn-outline-primary :hover {
+  background-color: aqua;
+}
+
+#newArray > button {
+  margin: 28px 40px;
+}
+
+body
+  > header
+  > nav
+  > div
+  > div.col.gap-2.d-sm-flex.justify-content-end
+  > button {
+  margin: 28px 40px;
+  padding: 12px 12px;
+}
+
+#input {
+  /* margin-left: 161px; */
+  color: hsl(45deg 100% 52%);
+  margin-top: 20px;
+}
+
+/* #input {
+    margin-left: 161px;
+    margin-top: 32px;
+    
+  } */
+
+body > header > nav > div {
+  margin-top: -40px;
+}
+
+body > header > h1 {
+  margin-top: -32px;
+}
+body > svg{
+    margin-top: 23px;
+}
+
+#bars{
+  transform: rotateX(
+180deg);
+}
